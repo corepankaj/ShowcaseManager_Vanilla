@@ -1,0 +1,149 @@
+{
+    "type": "filter",
+    "hide": [
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "970x250",
+    "format": "expandable"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "300x600",
+    "format": "expandable"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "300x250",
+    "format": "expandable"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "160x600",
+    "format": "expandable"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "728x90",
+    "format": "expandable"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "970x250",
+    "format": "inframe"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "300x600",
+    "format": "inframe"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "300x250",
+    "format": "inframe"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "160x600",
+    "format": "inframe"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "size": "728x90",
+    "format": "inframe"
+    },
+    {
+    "platform": [
+    "mobile"
+    ],
+    "size": "300x600",
+    "format": "inframe"
+    },
+    {
+    "platform": [
+    "mobile"
+    ],
+    "size": "300x250",
+    "format": "inframe"
+    },
+    {
+    "platform": [
+    "mobile"
+    ],
+    "size": "300x600",
+    "format": "expandable"
+    },
+    {
+    "platform": [
+    "mobile"
+    ],
+    "size": "300x250",
+    "format": "expandable"
+    },
+    {
+    "platform": [
+    "mobile"
+    ],
+    "size": "320x50",
+    "format": "adhesion"
+    },
+    {
+    "platform": [
+    "instream"
+    ],
+    "format": "instream"
+    },
+    {
+    "platform": [
+    "desktop"
+    ],
+    "format": "inread"
+    },
+    {
+    "platform": [
+    "mobile"
+    ],
+    "format": "instream"
+    },
+    {
+    "platform": [
+    "mobile"
+    ],
+    "format": "inread"
+    },
+    {
+    "platform": [
+    "TV"
+    ],
+    "size": "1x10",
+    "format": "noninteractiveinplayer"
+    },
+    {
+    "platform": [
+    "OTT"
+    ],
+    "size": "1x10",
+    "format": "noninteractiveinplayer"
+    }
+    ]
+    }
+    

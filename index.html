@@ -1,0 +1,224 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>VDX Showcase Size Hider</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your site's description should be here">
+    <meta name="keywords" content="Your site's keywords should be here">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css"> 
+	  <link rel="stylesheet" href="fonts/style_fonts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/match-height.js"></script> 
+    <script>
+		$(function () {
+			$('.match-height-bootstrap-row > * > *').matchHeight();
+			$('.match-height > *').matchHeight();
+		})
+    </script>
+  </head>
+  <body>
+
+    <div id="jsonDisplay"></div>
+    
+    <div class="global_container_">
+      <div class="group-1">
+        <p class="text">VDX Showcase Size Hider</p>
+		<p class="par1">Uncheck the Size to exclude from showcase ↓</p>
+		<p style="text-align: center; color:green;" id="messange"></p>
+        <div class="wrapper-2">
+          <div class="display">
+            <div class="rectangle-1-holder">
+              <div class="text-2">
+                <p>Display Expandable</p>
+              </div>
+            </div>
+            <div class="rectangle-2-holder">
+              <div class="sizes match-height group">
+               
+              <div class="group-2 group">
+                <input type="checkbox"  platform_value="desktop" format_value="expandable" value="970x250" class="Display_Expandable" onclick="handleCheckboxChange(event)" > <span class="checkboxText">970x250</span>
+            </div>
+            <div class="group-3 group">
+                <input type="checkbox" platform_value="desktop" format_value="expandable" value="300x600" class="Display_Expandable" onclick="handleCheckboxChange(event)" > <span class="checkboxText">300x600</span>
+            </div>
+            <div class="group-4 group">
+                <input type="checkbox" platform_value="desktop" format_value="expandable" value="300x250" class="Display_Expandable" onclick="handleCheckboxChange(event)" > <span class="checkboxText">300x250</span>
+            </div>
+            <div class="group-5 group">
+                <input type="checkbox" platform_value="desktop" format_value="expandable" value="160x600" class="Display_Expandable" onclick="handleCheckboxChange(event)" > <span class="checkboxText">160x600</span>
+            </div>
+            <div class="group-6 group">
+                <input type="checkbox" platform_value="desktop" format_value="expandable" value="728x90" class="Display_Expandable" onclick="handleCheckboxChange(event)" > <span class="checkboxText">728x90</span>
+            </div>
+    
+              </div>
+            </div>
+          </div>
+          <div class="inframes">
+            <div class="rectangle-1-holder-2">
+              <div class="inframes-2">
+                <p>Inframes</p>
+              </div>
+            </div>
+            <div class="rectangle-2-holder-2">
+              
+              <div class="sizes-2 match-height group">
+                <div class="group-7 group">
+                  <input type="checkbox" platform_value="desktop" format_value="inframe" value="970x250" class="Desktop_Inframe" onclick="handleCheckboxChange(event)" > <span class="checkboxText">970x250</span>
+                </div>
+                <div class="group-8 group">
+                  <input type="checkbox" platform_value="desktop" format_value="inframe" value="300x600" class="Desktop_Inframe" onclick="handleCheckboxChange(event)" > <span class="checkboxText">300x600</span>
+                </div>
+                <div class="group-9 group">
+                  <input type="checkbox" platform_value="desktop" format_value="inframe" value="300x250" class="Desktop_Inframe" onclick="handleCheckboxChange(event)" > <span class="checkboxText">300x250</span>
+                </div>
+                <div class="group-10 group">
+                  <input type="checkbox" platform_value="desktop" format_value="inframe" value="160x600" class="Desktop_Inframe" onclick="handleCheckboxChange(event)" > <span class="checkboxText">160x600</span>
+                </div>
+                <div class="group-11 group">
+                  <input type="checkbox" platform_value="desktop" format_value="inframe" value="728x90" class="Desktop_Inframe" onclick="handleCheckboxChange(event)"> <span class="checkboxText">728x90</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+		  
+		  
+          <div class="mobile_inframes">
+            <div class="rectangle-1-holder-3">
+              <div class="text-13">
+                <p>Mobile Inframes</p>
+              </div>
+            </div>
+            <div class="rectangle-2-holder-3">
+              <div class="sizes-3 match-height group">
+                <div class="group-12 group">
+                  <input type="checkbox" platform_value="mobile" format_value="inframe"  value="300x600" class="Mobile_Inframe" onclick="handleCheckboxChange(event)"> <span class="checkboxText">300x600</span>
+                </div>
+                <div class="group-13 group">
+                  <input type="checkbox" platform_value="mobile" format_value="inframe"  value="300x250" class="Mobile_Inframe" onclick="handleCheckboxChange(event)"> <span class="checkboxText">300x250</span>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  
+		  
+		  
+          <div class="mobile_expandable">
+            <div class="rectangle-1-holder-4">
+              <div class="text-16">
+                <p>Mobile Expandable</p>
+              </div>
+            </div>
+            <div class="rectangle-2-holder-4">
+              <div class="sizes-4 match-height group">
+                <div class="group-14 group">
+                  <input type="checkbox" platform_value="mobile" format_value="expandable" value="300x600" class="Mobile_Expandable" onclick="handleCheckboxChange(event)" > <span class="checkboxText">300x600</span>
+                </div>
+                <div class="group-15 group">
+                  <input type="checkbox" platform_value="mobile" format_value="expandable" value="300x250" class="Mobile_Expandable" onclick="handleCheckboxChange(event)" > <span class="checkboxText">300x250</span>
+                </div>
+                <div class="group-16 group">
+                  <input type="checkbox" platform_value="mobile" format_value="adhesion" value="320x50" class="Mobile_Expandable" onclick="handleCheckboxChange(event)" > <span class="checkboxText">320x50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+          <div class="instreams">
+            <div class="rectangle-1-holder-5">
+              <div class="text-20">
+                <p>Instream/in-read</p>
+              </div>
+            </div>
+            <div class="rectangle-2-holder-5">
+              <div class="sizes-5">
+                <div class="sizes-6 match-height group">
+                  <div class="desktop_instream group">
+                    <input type="checkbox" platform_value="instream" format_value="instream" value="Desktop instream"  class="Instream_Inread" onclick="handleCheckboxChange(event)" > <span class="checkboxText">Desktop instream</span>
+                  </div>
+                  <div class="desktop_inread group">
+                    <input type="checkbox" platform_value="desktop" format_value="inread" value="Desktop in-read" class="Instream_Inread" onclick="handleCheckboxChange(event)" > <span class="checkboxText">Desktop in-read</span>
+                  </div>
+                  <div class="mobile_instream group">
+                    <input type="checkbox"  platform_value="mobile" format_value="instream" value="Mobile instream" class="Instream_Inread" onclick="handleCheckboxChange(event)" > <span class="checkboxText">Mobile instream</span>
+                  </div>
+                  <div class="mobile_inread group">
+                    <input type="checkbox" platform_value="mobile" format_value="inread" value="Mobile in-read" class="Instream_Inread" onclick="handleCheckboxChange(event)" > <span class="checkboxText">Mobile in-read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+          <div class="instreams-copy">
+            <div class="rectangle-1-holder-6">
+              <div class="text-25">
+                <p>CTV/OTT</p>
+              </div>
+            </div>
+            <div class="rectangle-2-holder-6">
+              <div class="sizes-7">
+                <div class="sizes-8 match-height group">
+                  <div class="desktop_instream-2 group">
+                    <input type="checkbox" platform_value="TV" format_value="noninteractiveinplayer" value="CTV" class="Ctv_Ott" onclick="handleCheckboxChange(event)" > <span class="checkboxText">CTV</span>
+                  </div>
+                  <div class="desktop_inread-2 group">
+                    <input type="checkbox" platform_value="OTT" format_value="noninteractiveinplayer" value="OTT" class="Ctv_Ott" onclick="handleCheckboxChange(event)" > <span class="checkboxText">OTT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  
+		  
+          <div class="option">
+            <div class="copy1 group">
+              <p class="text-26"><a id="selectAllDisplayExp">Select All</a></p>
+              <div class="rectangle-3"></div>
+              <p class="clear"><a id="clearAllDisplayExp">Deselect All</a></p>
+            </div>
+            <div class="copy1-copy group">
+              <p class="text-27"><a id="selectAllDesktopInframe">Select All</a></p>
+              <div class="rectangle-3-2"></div>
+              <p class="clear-2"><a id="clearAllDesktopInframe">Deselect All</a></p>
+            </div>
+            <div class="copy1-copy-2 group">
+              <p class="text-28"><a id="selectAllMobileInframe">Select All</a></p>
+              <div class="rectangle-3-3"></div>
+              <p class="clear-3"><a id="clearAllMobileInframe">Deselect All</a></p>
+            </div>
+            <div class="copy1-copy-3 group">
+              <p class="text-29"><a id="selectAllMobileExp">Select All</a></p>
+              <div class="rectangle-3-4"></div>
+              <p class="clear-4"><a id="clearAllMobileExp">Deselect All</a></p>
+            </div>
+            <div class="copy1-copy-4 group">
+              <p class="text-30"><a id="selectAllInstreamInread">Select All</a></p>
+              <div class="rectangle-3-5"></div>
+              <p class="clear-5"><a id="clearAllInstreamInread">Deselect All</a></p>
+            </div>
+            <div class="copy1-copy-5 group">
+              <p class="text-31"><a id="selectAllCtvOtt">Select All</a></p>
+              <div class="rectangle-3-6"></div>
+              <p class="clear-6"><a id="clearAllCtvOtt">Deselect All</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="copy_cta" id="copyBtn" onclick="copyContent()">
+          Copy Code
+        </div>
+      </div>
+    </div>
+    <script src="js/App.js"></script> 
+  </body>
+</html>
